@@ -1,9 +1,10 @@
+import Header from '../components/header'
 import Head from 'next/head'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-teal-100 h-screen">
       <Head>
         <title>Searchify</title>
         <meta name="description" content="Searchify - the search engine" />
@@ -11,11 +12,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-blue-300 text-3xl">
-        Hello world!
-      </h1>
+      {/* Header */}
+      <Header />
+
+      {/* Body */}
+
+      {/* Footer */}
 
 
-    </>
+    </div>
   )
 }
